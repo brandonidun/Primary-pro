@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, */
+    /* Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+}
+
+.homepage{
+  background-image: url(/home-image.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.landing-page{
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #ecebe776;
+  position: fixed;
+  width: 100%;
+  height: 6em;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  /* align-items: center; */
+  /* width: 100%; */
+  /* justify-content: center; */
+}
+
+.buttons ul {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+}
+
+.buttons li {
+  font-size: large;
+  font-weight: 100;
+  list-style: none;
+  margin: 30px;
+  padding: 8px 0;
+  /* margin-left: 80px;
+  margin-bottom: 13px; */
+}
+
+.login-button {
+  /* color: white; */
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.523);
+}
+
+.login-button a {
+  color: white;
+}
+
+.login-button:hover {
+  background-color: #000;
+}
+
+.signup-button {
+  /* color: white; */
+  border-radius: 30px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.523);
+}
+
+.signup-button a {
+  color: white;
+}
+
+.signup-button:hover {
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.home-banner {
+  margin-top: 150px;
+  /* height: 90vh; */
+}
+
+.motto {
+  margin-right: 40%;
+  margin-left: 15%;
+}
+
+.motto h1{
+  font-size: 80px;
+  font-weight: 400;
+  color: white;
+}
+
+.motto p{
+  color: white;
+  width: 80%;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.start-application-buttons {
+  border-radius: 50px;
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.523);
+}
+
+.start-application-buttons a {
+  font-weight: 200;
+  color: white;
+}
+
+.start-application-buttons:hover {
+  background-color: #000;
+}
+
+.search{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.presearch-text {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search p {
+  font-size: 30px;
+  font-weight: 100;
+  color: white;
+}
+
+.telescope {
+  background-image: url('/telescope.png');
+  background-size: contain;
+  margin-left: 30px;
+  width: 50px;
+  height: 50px;
+
+}
+
+.form-container {
+  height: 70vh;
+  width: 70%;
+  background-color: rgba(116, 178, 194, 0.719);
+  border-radius: 50px;
+}
+
+form{
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: larger;
+  border-radius: 60px;
+  border: none;
+  height: 60px;
+  width: 75%;
+}
+
+button {
+  width: 35px;
+  height: 35px;
+  background-image: url('/search.png');
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  margin-left: 30px;
+}    
