@@ -207,3 +207,47 @@ button {
   border: none;
   margin-left: 30px;
 }    
+
+.sign-up-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(39, 102, 161); */
+  background-image: url('/home-image.jpg');
+  background-repeat: no-repeat;
+}
+
+.header{
+  color: white;
+}
+
+.sign-up-container {
+display: flex;
+flex-direction: column;
+align-items: center   ;
+justify-content: space-evenly;
+width: 30%;
+height: 90vh;
+margin-top: 50px;
+background-color: aliceblue;
+border-radius: 30px;
+}
+ 
+#sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+}     
