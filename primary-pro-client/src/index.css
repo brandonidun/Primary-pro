@@ -251,3 +251,37 @@ border-radius: 30px;
   display: flex;
   flex-direction: column;
 }     
+
+.sign-in-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(39, 102, 161); */
+  background-image: url('/home-image.jpg');
+  background-repeat: no-repeat;
+}
+
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center   ;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 50vh;
+  margin-top: 50px;
+  background-color: aliceblue;
+  border-radius: 30px;
+  }
+
+  #sign-in-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
+
+  .sign-in-form-div {
+    display: flex;
+  }
