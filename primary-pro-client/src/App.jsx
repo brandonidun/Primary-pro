@@ -1,7 +1,7 @@
 import Navbar from './navbar';
 import Home from './home';
 import Search from './search';
-import { Link } from 'react-router-dom';
+import Faq from './faq';
 
 function App() {
   return (
@@ -17,6 +17,9 @@ function App() {
         </div>
         <div className="search">
           <Search />
+        </div>
+        <div className="faq">
+          <Faq />
         </div>
       </div>
     </div>

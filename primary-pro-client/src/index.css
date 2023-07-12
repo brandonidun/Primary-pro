@@ -29,7 +29,7 @@
   background-color: #ecebe776;
   position: fixed;
   width: 100%;
-  height: 6em;
+  height: 7em;
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -102,27 +102,27 @@ a {
 }
 
 .home-banner {
-  margin-top: 150px;
+  margin-top: 190px;
   /* height: 90vh; */
 }
 
 .motto {
-  margin-right: 40%;
-  margin-left: 15%;
+  margin-right: 50%;
+  margin-left: 10%;
 }
 
 .motto h1{
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 900;
   color: white;
 }
 
 .motto p{
   color: white;
   width: 80%;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .start-application-buttons {
@@ -174,31 +174,31 @@ a {
 
 }
 
-.form-container {
-  height: 70vh;
-  width: 70%;
-  background-color: rgba(116, 178, 194, 0.719);
-  border-radius: 50px;
+.search-form-container {
+  margin-top: 50px;
+  height: 65vh;
+  width: 80%;
+  background-color: rgb(105, 149, 202);
 }
 
-form{
+.search-form-container form{
   display: flex;
   height: 100px;
   align-items: center;
   justify-content: center;
 }
 
-input {
+.search-form-container input {
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: larger;
   border-radius: 60px;
   border: none;
   height: 60px;
-  width: 75%;
+  width: 80%;
 }
 
-button {
+.form button {
   width: 35px;
   height: 35px;
   background-image: url('/search.png');
@@ -208,6 +208,49 @@ button {
   margin-left: 30px;
 }    
 
+.search-filters{
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  width: 90%;
+  text-align: left;
+}
+
+.search-filters p{
+  font-size: 17px;
+  margin:20px;
+}
+
+.search-filters-buttons{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-filters button{
+  margin: 20px;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(63, 117, 183);
+}
+
+.start button{
+  padding: 20px;
+  font-size: 15px;
+  margin: 20px;
+  border-radius: 30px;
+  border: none;
+  color: aliceblue;
+  background-color: black;
+}
+
+.faq-banner{
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(243, 243, 243);
+  margin-top: 150px;
+}
 .sign-up-page{
   display: flex;
   flex-direction: column;

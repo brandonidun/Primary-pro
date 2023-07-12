@@ -8,7 +8,6 @@ import './index.css';
 import App from './App';
 import Login from './login'
 import Signup from './signup'
-// import 'semantic-ui-css/semantic.min.css'
 
 const router = createBrowserRouter([
   {
