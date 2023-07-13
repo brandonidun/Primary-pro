@@ -246,11 +246,190 @@ a {
 }
 
 .faq-banner{
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   background-color: rgb(243, 243, 243);
   margin-top: 150px;
 }
+
+.faq-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 40vh;
+}
+
+.header-writings{
+  height: 40vh;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin-left: 110px;
+  color: black;
+}
+
+.header-writings h1{
+  font-size: 70px;
+  font-weight:100;
+}
+
+.header-writings p{
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.header-svgs{
+  width: 15%;
+  height: 29vh; 
+  padding: 10px;
+  margin-top: 30px;
+  margin-right: 20px;
+  background-image: url('/hot-air-balloon.png');
+  background-size:cover;
+}
+
+.faq-cards{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40vh;
+  justify-content: center;
+  color: white;
+}
+
+
+.why-school{
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(105, 149, 202);
+}
+
+.why-school-svg{
+  width: 27%;
+  height: 9vh;
+  padding: 10px;
+  background-image: url('/book.png');
+  background-size:cover;
+}
+
+
+.why-school h1{
+  font-size: 20px;
+}
+
+.why-school p{
+  margin-right: 120px;
+}
+
+.fees{
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(105, 149, 202);
+}
+
+.fees-svg{
+  width: 23%;
+  height: 9vh;
+  padding: 10px;
+  background-image: url('/calculator.png');
+  background-size:cover;
+}
+
+.fees h1{
+  font-size: 20px;
+}
+
+.fees p{
+  margin-right: 120px;
+}
+
+.roadmap{
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(105, 149, 202);
+}
+
+.roadmap-svg{
+  width: 27%;
+  height: 9vh;
+  padding: 10px;
+  background-image: url('/distance.png');
+  background-size:cover;
+}
+
+.roadmap h1{
+  font-size: 20px;
+}
+
+.roadmap p{
+  margin-right: 120px;
+}
+
+.help-banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(to right, rgb(105, 149, 202), rgba(82, 190, 218))
+}
+
+.contact-support{
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  height: 30vh;
+  background-color: white;
+}
+.contact-support-photo{
+  width: 27%;
+  height: 27vh;
+  margin: 15px;
+  border-radius: 10px;
+  background-image: url("/customer-care.jpg");
+  background-size: cover;
+}
+
+.contact-support-writings{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-support-writings h1{
+  color: rgba(82, 190, 218);
+  font-size: 45px;
+}
+
+.contact-support-writings button{
+  margin: 20px;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: rgba(82, 190, 218);
+}
+
 .sign-up-page{
   display: flex;
   flex-direction: column;
@@ -266,15 +445,15 @@ a {
 }
 
 .sign-up-container {
-display: flex;
-flex-direction: column;
-align-items: center   ;
-justify-content: space-evenly;
-width: 30%;
-height: 90vh;
-margin-top: 50px;
-background-color: aliceblue;
-border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center   ;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 90vh;
+  margin-top: 50px;
+  background-color: aliceblue;
+  border-radius: 30px;
 }
  
 #sign-up-form {

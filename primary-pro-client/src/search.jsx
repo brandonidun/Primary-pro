@@ -43,7 +43,10 @@ const Search = ({ onSearch }) => {
                 <button>medium(201 to 999)</button>
                 <button>large(1,000+)</button>
                 <button>rural</button>
+                <button>suburban</button>
                 <button>urban</button>
+                <button>mixed race</button>
+                <button>mentally disorder care</button>
             </div>
             <div className="start">
             <button>start</button>

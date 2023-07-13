@@ -2,6 +2,7 @@ import Navbar from './navbar';
 import Home from './home';
 import Search from './search';
 import Faq from './faq';
+import Help from './help';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </div>
         <div className="faq">
           <Faq />
+        </div>
+        <div className="help">
+          <Help />
         </div>
       </div>
     </div>
