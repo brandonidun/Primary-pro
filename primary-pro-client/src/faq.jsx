@@ -19,13 +19,13 @@ const Faq = () => {
                     <div className="why-school-svg"></div>
                     <h1>WHY SCHOOL MATTERS</h1>
                     <p>School is worth it. Your future is worth it. You are worth it.</p>
-                    <p><a href="">Learn why college</a></p>
+                    <p><a href="">Learn why school</a></p>
                 </div>
                 <div className="fees">
                     <div className="fees-svg"></div>
                     <h1>PAYING FOR SCHOOL</h1>
                     <p>There are lots of options available to you. We can help you find them.</p>
-                    <p><a href="">Learn how to pay for achool</a></p>
+                    <p><a href="">Learn how to pay for school</a></p>
                 </div>
                 <div className="roadmap">
                     <div className="roadmap-svg"></div>

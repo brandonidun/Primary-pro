@@ -51,25 +51,18 @@ const Signup = () => {
 
   return (
     <div className='sign-up-page'>
-      <div className="header">
+      <div className="signup-header">
         <h1>PrimaryPro</h1>
       </div>
       
       <div className="sign-up-container">
-        <div>Sign Up!</div>
-        <div className="form-div">
-        <form id= "sign-up-form"onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="username">Username:</label>
-          <input
-            type="text"
-            id="username"
-            value={username}
-            onChange={handleUsernameChange}
-          />
+        <div className='signup-container-writings'>
+          <h1>Create Your Account</h1>
         </div>
-        <div className='email'>
-          <label htmlFor="email">Email:</label>
+        <div className="signup-form-div">
+        <form id= "sign-up-form"onSubmit={handleSubmit}>
+        <div className='signup-email'>
+          <label htmlFor="email">Email Address *</label>
           <input
             type="email"
             id="email"
@@ -78,7 +71,7 @@ const Signup = () => {
           />
         </div>
         <div>
-          <label htmlFor="retypeEmail">Re-type Email Address:</label>
+          <label htmlFor="retypeEmail">Re-type Email Address *</label>
           <input
             type="email"
             id="retypeEmail"
@@ -86,6 +79,16 @@ const Signup = () => {
             onChange={handleRetypeEmailChange}
           />
         </div>
+        <div className='signup-username'>
+          <label htmlFor="username">Username *</label>
+          <input
+            type="text"
+            id="username"
+            value={username}
+            onChange={handleUsernameChange}
+          />
+        </div>
+        
         <div>
           <label htmlFor="firstName">Legal First/Given Name:</label>
           <input
