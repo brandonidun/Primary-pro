@@ -4,6 +4,8 @@ const Signup = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [retypeEmail, setRetypeEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [retypePassword, setRetypePassword] = useState('');
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [phone, setPhone] = useState('');
@@ -21,6 +23,14 @@ const Signup = () => {
     const handleRetypeEmailChange = (e) => {
       setRetypeEmail(e.target.value);
     };
+
+    const handlePasswordChange = (e) => {
+      setPassword(e.target.value);
+  };
+
+    const handleRetypePasswordChange = (e) => {
+      setRetypePassword(e.target.value);
+  };
   
     const handleFirstNameChange = (e) => {
       setFirstName(e.target.value);
@@ -70,13 +80,31 @@ const Signup = () => {
             onChange={handleEmailChange}
           />
         </div>
-        <div>
+        <div className='signup-retype-email'>
           <label htmlFor="retypeEmail">Re-type Email Address *</label>
           <input
             type="email"
             id="retypeEmail"
             value={retypeEmail}
             onChange={handleRetypeEmailChange}
+          />
+        </div>
+        <div className='signup-password'>
+          <label htmlFor="password">Password  *</label>
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+        </div>
+        <div className='signup-retype-password'>
+          <label htmlFor="RetypePassword">Retype Password  *</label>
+          <input
+            type="password"
+            id="RetypePassword"
+            value={retypePassword}
+            onChange={handleRetypePasswordChange}
           />
         </div>
         <div className='signup-username'>
@@ -88,9 +116,8 @@ const Signup = () => {
             onChange={handleUsernameChange}
           />
         </div>
-        
-        <div>
-          <label htmlFor="firstName">Legal First/Given Name:</label>
+        <div className='signup-first-name'>
+          <label htmlFor="firstName">Legal First/Given Name *</label>
           <input
             type="text"
             id="firstName"
@@ -98,8 +125,8 @@ const Signup = () => {
             onChange={handleFirstNameChange}
           />
         </div>
-        <div>
-          <label htmlFor="lastName">Last/Family/Surname:</label>
+        <div  className='signup-last-name'>
+          <label htmlFor="lastName">Last/Family/Surname *</label>
           <input
             type="text"
             id="lastName"
@@ -107,8 +134,8 @@ const Signup = () => {
             onChange={handleLastNameChange}
           />
         </div>
-        <div className='phone'>
-          <label htmlFor="phone">Phone:</label>
+        <div className='signup-phone'>
+          <label htmlFor="phone">Phone *</label>
           <input
             type="text"
             id="phone"
@@ -116,8 +143,8 @@ const Signup = () => {
             onChange={handlePhoneChange}
           />
         </div>
-        <div>
-          <label htmlFor="dateOfBirth">Date of Birth:</label>
+        <div className='signup-date-of-birth'>
+          <label htmlFor="dateOfBirth">Date of Birth *</label>
           <input
             type="date"
             id="dateOfBirth"
@@ -125,17 +152,17 @@ const Signup = () => {
             onChange={handleDateOfBirthChange}
           />
         </div>
-        <div>
-          <label htmlFor="address">Address:</label>
+        <div className='signup-address'>
+          <label htmlFor="address">Address *</label>
           <textarea
             id="address"
             value={address}
             onChange={handleAddressChange}
           ></textarea>
         </div>
-        <div className="sign-up-button">
-            <button type="submit">Sign Up</button>
-        </div>
+        <button type="submit">
+          Create Account
+        </button>
       </form>
       </div>
       </div>

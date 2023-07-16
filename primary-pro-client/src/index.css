@@ -462,20 +462,32 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  width: 30%;
-  height: 90vh;
+  width: 33%;
+  height: 150vh;
   margin-top: 50px;
   background-color: aliceblue;
   border-radius: 30px;
+}
+.signup-container-writings{
+  margin: 50px;
+  margin-bottom: 0px;
+}
+
+.signup-container-writings h1{
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.signup-form-div{
+  width: 80%;
 }
  
 #sign-up-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: 13px;
+  height: 140vh;
   justify-content: space-evenly;
-  margin-top: 15px;
 }
 
 .email {
@@ -486,7 +498,17 @@ a {
 .phone {
   display: flex;
   flex-direction: column;
-}     
+} 
+
+#sign-up-form button{
+  font-size: 12px;
+  width: 25%;
+  height: 6vh;
+  border-radius: 30px;
+  border: none;
+  color: aliceblue;
+  background-color: rgb(105, 149, 202);
+}
 
 .signin-header{
   font-family: 'Mynerve';
