@@ -49,7 +49,9 @@ const Search = ({ onSearch }) => {
                 <button>mentally disorder care</button>
             </div>
             <div className="start">
-            <button>start</button>
+            <button type='submit'>
+                start
+            </button>
             </div>
         </div>
     </div>

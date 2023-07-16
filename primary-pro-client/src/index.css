@@ -130,29 +130,26 @@ a {
   margin-top: 25px;
 }
 
-.start-application-buttons {
+.start-application-buttons button {
   border-radius: 50px;
-  width: 160px;
+  width: 25%;
   height: 50px;
   text-align: center;
   padding: 15px;
   margin-top: 30px;
   background-color: rgba(0, 0, 0, 0.523);
-}
-
-.start-application-buttons a {
+  font-size: 13px;
+  border: none;
   font-weight: 200;
   color: white;
 }
 
-.start-application-buttons:hover {
+.start-application-buttons  button:hover {
   background-color: #000;
 }
 
 .search{
   display: flex;
-  text-align: center;
-  align-items: center;
   justify-content: center;
 }
 .presearch-text {
@@ -195,7 +192,7 @@ a {
 
 .search-form-container input {
   background-color: rgb(255, 255, 255);
-  text-align: center;
+  padding: 30px;
   font-size: larger;
   border-radius: 60px;
   border: none;
@@ -338,6 +335,10 @@ a {
   font-weight: 300;
 }
 
+.why-school a:hover{
+  text-decoration: underline;
+}
+
 .fees{
   display: flex;
   width: 22%;
@@ -366,6 +367,10 @@ a {
   font-weight: 300;
 }
 
+.fees a:hover{
+  text-decoration: underline;
+}
+
 .roadmap{
   display: flex;
   width: 21%;
@@ -392,6 +397,10 @@ a {
 .roadmap p{
   margin-right: 50px;
   font-weight: 300;
+}
+
+.roadmap a:hover{
+  text-decoration: underline;
 }
 
 .help-banner{
@@ -448,6 +457,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 170vh;
   /* background-color: rgb(39, 102, 161); */
   background-image: url('/home-image.jpg');
   background-repeat: no-repeat;
@@ -479,30 +489,22 @@ a {
 }
 
 .signup-form-div{
-  width: 80%;
+  width: 75%;
 }
  
 #sign-up-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 13px;
+  width: 100%;
   height: 140vh;
   justify-content: space-evenly;
 }
 
-.email {
-  display: flex;
-  flex-direction: column;
-}
-
-.phone {
-  display: flex;
-  flex-direction: column;
-} 
-
 #sign-up-form button{
   font-size: 12px;
-  width: 25%;
+  width: 31%;
   height: 6vh;
   border-radius: 30px;
   border: none;
@@ -589,7 +591,8 @@ a {
 
 input{
   width: 100%;
-  font-size: 25px;
+  padding: 15px;
+  font-size: 15px;
   background-color: aliceblue;
   border: 1px solid #55555565;
   border-radius: 5px;
@@ -599,8 +602,13 @@ input:focus {
   border: 1px solid #000;
 }
 
+.sign-in-form-div a:hover{
+  text-decoration: underline
+}
+
 #sign-in-form button{
   font-size: 12px;
+  margin-top: 15px;
   width: 25%;
   height: 6vh;
   border-radius: 30px;
@@ -608,3 +616,60 @@ input:focus {
   color: aliceblue;
   background-color: rgb(105, 149, 202);
 }
+
+.signup-signin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-signin a:hover{
+  text-decoration: underline
+}
+
+.profile-navbar  {
+  display: flex;
+  flex-direction: row;
+  background-color: #ecebe776;
+  position: fixed;
+  width: 100%;
+  height: 7em;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+
+.profile-navbar h1{
+  font-weight: 300;
+  font-family: "Mynerve";
+}
+
+.profile-details{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-writings{
+  font-size: 13px;
+}
+
+.profile-details button{
+  font-size: 12px;
+  margin: 20px;
+  width: 31%;
+  height: 6vh;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+.profile-photos{
+  width: 70px;
+  height: 50px;
+  margin: 20px;
+  background-image: url("/profile.png");
+}
+

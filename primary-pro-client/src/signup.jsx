@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
     const [username, setUsername] = useState('');
@@ -153,16 +154,27 @@ const Signup = () => {
           />
         </div>
         <div className='signup-address'>
-          <label htmlFor="address">Address *</label>
-          <textarea
+          <label htmlFor="address">Address line *</label>
+          <input
+            type="text"
             id="address"
             value={address}
             onChange={handleAddressChange}
-          ></textarea>
+          />
         </div>
-        <button type="submit">
-          Create Account
-        </button>
+          <button type="submit">
+          <Link to="/profile.jsx">
+            <a href="">Create Account</a>
+          </Link> 
+          </button>
+        <div className="signup-signin">
+          <p>already have an account?</p>
+            <Link to="/login.jsx">
+              <a href="">
+                sign in
+              </a>
+            </Link>
+        </div>
       </form>
       </div>
       </div>

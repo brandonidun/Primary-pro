@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Home = () => {
     return (
         <div className="home-banner">
@@ -5,7 +7,9 @@ const Home = () => {
                 <h1>This is where your future starts.</h1>
                 <p>enroll in a school for the first time or lets help you with your transfer of schools.</p>
                 <div className="start-application-buttons">
-                    <a href="">start application</a>
+                <Link to="/signup.jsx">
+                    <button type='submit'>start application</button>
+                </Link>
                 </div>
             </div>
         </div>

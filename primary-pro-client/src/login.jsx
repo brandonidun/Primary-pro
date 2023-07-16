@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     const [username, setUsername] = useState('');
@@ -34,7 +34,6 @@ const Login = () => {
                         *Indicates required fields.
                     </p>
                 </div>
-
                 <div className="sign-in-form-div">
                     <form id='sign-in-form' onSubmit={handleSubmit}>
                         <div className='login-username'>
@@ -55,12 +54,22 @@ const Login = () => {
                             onChange={handlePasswordChange}
                             />
                         </div>
-                        <button type="submit">
-                            Sign In!
+                       <button type="submit">
+                            <Link to="/profile.jsx">
+                                <a href="">Sign In!</a>
+                            </Link> 
                         </button>
                         <a href="">
                             forgot password?
                         </a>
+                        <div className="signup-signin">
+                            <p>Don't have an account?</p>
+                            <Link to="/signup.jsx">
+                                <a href="">
+                                    sign up
+                                </a>
+                            </Link>
+                        </div>
                     </form>
                 </div>
             </div>
