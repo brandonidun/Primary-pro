@@ -4,20 +4,30 @@ const Profile = () => {
     const email = "biduntawiah@gmail.com"
     
     return (
+        <div className="page">
+        <div className="profile-page">
         <div className="profile-navbar">
             <h1>PrimaryPro</h1>
             <div className="profile-details">
-                <div className="profile-photos"></div>
+                <div className="profile-photos">
+
+                </div>
                 <div className="profile-writings">
                     <p>Welcome {name},</p>
-                    <p>{id}</p>  
+                    <p>{id}</p>
                     <p>{email}</p>
                 </div>
                 <button type="submit">
                     sign out
                 </button>
             </div>
+            </div>
         </div>
+        <div className="body">
+            hey
+        </div>
+        </div>
+        
      );
 }
  

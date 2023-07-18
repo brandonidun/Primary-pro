@@ -626,6 +626,10 @@ input:focus {
 .signup-signin a:hover{
   text-decoration: underline
 }
+.profile-page{
+  display: flex;
+  flex-direction: column;
+}
 
 .profile-navbar  {
   display: flex;
@@ -673,3 +677,88 @@ input:focus {
   background-image: url("/profile.png");
 }
 
+
+.profile-page{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.why-school-page{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.why-school-header{
+  margin-top: 190px;
+  margin-left: 300px;
+}
+
+.why-school-header h1{
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.header-underline{
+  margin-top: 20px;
+  height: 7px;
+  width: 170px;
+  background-image: linear-gradient(to right, rgb(116, 196, 226), rgba(202, 225, 122))
+}
+
+.why-school-svgs{
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+  justify-content: flex-start;
+  border-bottom: 3px solid rgba(202, 225, 122);
+}
+
+.svg2{
+  background-image: url('/children.png');
+  margin-left: 180px;
+  width: 27%;
+  height: 15vh;
+  padding: 10px;
+  background-size: contain; 
+  background-repeat: no-repeat;
+}
+
+
+.svg3{
+  background-image: url('/playtime.png');
+  margin-left: 500px;
+  width: 27%;
+  height: 15vh;
+  padding: 10px;
+  background-size: contain; 
+  background-repeat: no-repeat;
+}
+
+.why-school-info-banner{
+  background-color: #ecebe776;
+  
+}
+
+.why-school-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 80px;
+  width: 43%;
+  height: 50vh;
+}
+
+.why-school-info h1{
+font-size: 35px;
+font-weight: 500;
+}
+
+.why-school-info p{
+  font-size: 20px;
+  margin-top: 30px;
+}

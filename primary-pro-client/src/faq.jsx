@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Faq = () => {
     return ( 
         <div className="faq-banner">
@@ -19,7 +21,11 @@ const Faq = () => {
                     <div className="why-school-svg"></div>
                     <h1>WHY SCHOOL MATTERS</h1>
                     <p>School is worth it. Your future is worth it. You are worth it.</p>
-                    <p><a href="">Learn why school</a></p>
+                    <p>
+                        <Link to="/whyschool.jsx">
+                            <a href="">Learn why school</a>
+                        </Link>
+                    </p>
                 </div>
                 <div className="fees">
                     <div className="fees-svg"></div>
@@ -31,7 +37,9 @@ const Faq = () => {
                     <div className="roadmap-svg"></div>
                     <h1>YOUR SCHOOL ROADMAP</h1>
                     <p>The path may seem unclear. We can help you find your way.</p>
-                    <p><a href="">Learn how to get to school</a></p>
+                    <p>
+                        <a href="">Learn how to get to school</a>
+                    </p>
                 </div>
             </div>
         </div>

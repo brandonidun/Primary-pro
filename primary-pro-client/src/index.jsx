@@ -8,7 +8,8 @@ import './index.css';
 import App from './App';
 import Login from './login'
 import Signup from './signup'
-import Profile from './profile';
+import Profile from './profile'
+import WhySchool from './whyschool';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/profile.jsx",
     element: <Profile />,
+  },
+  {
+    path: "/whyschool.jsx",
+    element: <WhySchool />,
   },
 ]);
 
