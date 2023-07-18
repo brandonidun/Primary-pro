@@ -761,4 +761,61 @@ font-weight: 500;
 .why-school-info p{
   font-size: 20px;
   margin-top: 30px;
+  font-weight: 300;
+}
+
+.why-school-more-info-banner{
+  height: 900vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-info1{
+  height: 30vh;
+  width: 57%;
+  margin-top: 130px;
+}
+
+.more-info1 h1{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.more-info1 p{
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.more-info2{
+  height: 30vh;
+  width: 57%;
+  margin-top: 20px;
+}
+
+.more-info2 h1{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.more-info2 p{
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+
+.more-info3{
+  height: 30vh;
+  width: 57%;
+  margin-top: 20px;
+}
+
+.more-info3 h1{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.more-info3 p{
+  margin-top: 30px;
+  font-weight: 300;
 }
