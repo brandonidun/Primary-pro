@@ -10,6 +10,8 @@ import Login from './login'
 import Signup from './signup'
 import Profile from './profile'
 import WhySchool from './whyschool';
+import Roadmap from './roadmap';
+import Fees from './fees';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
   {
     path: "/whyschool.jsx",
     element: <WhySchool />,
+  },
+  {
+    path: "/roadmap.jsx",
+    element: <Roadmap />,
+  },
+  {
+    path: "/fees.jsx",
+    element: <Fees />,
   },
 ]);
 

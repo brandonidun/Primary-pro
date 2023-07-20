@@ -21,7 +21,9 @@ const Login = () => {
         return (  
         <div className='sign-in-page'>
             <div className="signin-header">
+            <Link to="/">
                 <h1>PrimaryPro</h1>
+            </Link>
             </div>
         
             <div className="sign-in-container">

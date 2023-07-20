@@ -293,7 +293,8 @@ a {
   margin-top: 30px;
   margin-right: 20px;
   background-image: url('/hot-air-balloon.png');
-  background-size:cover;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 .faq-cards{
@@ -321,9 +322,9 @@ a {
   height: 9vh;
   padding: 10px;
   background-image: url('/book.png');
-  background-size:cover;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
-
 
 .why-school h1{
   font-size: 15px;
@@ -354,7 +355,8 @@ a {
   height: 9vh;
   padding: 10px;
   background-image: url('/calculator.png');
-  background-size:cover;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 .fees h1{
@@ -386,7 +388,8 @@ a {
   height: 9vh;
   padding: 10px;
   background-image: url('/distance.png');
-  background-size:cover;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 .roadmap h1{
@@ -670,13 +673,17 @@ input:focus {
   background-color: black;
 }
 
+.profile-details button a{
+  color: white ;
+}
+
 .profile-photos{
   width: 70px;
   height: 50px;
   margin: 20px;
   background-image: url("/profile.png");
+  background-repeat: no-repeat;
 }
-
 
 .profile-page{
   display: flex;
@@ -803,11 +810,10 @@ font-weight: 500;
   font-weight: 300;
 }
 
-
 .more-info3{
-  height: 30vh;
+  height: 35vh;
   width: 57%;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .more-info3 h1{
@@ -818,4 +824,134 @@ font-weight: 500;
 .more-info3 p{
   margin-top: 30px;
   font-weight: 300;
+}
+
+.roadmap-page{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.roadmap-header{
+  margin-top: 190px;
+  margin-left: 300px;
+}
+
+.roadmap-header h1{
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.roadmap-underline{
+  margin-top: 20px;
+  height: 7px;
+  width: 170px;
+  background-image: linear-gradient(to right, rgb(116, 196, 226), rgba(202, 225, 122))
+}
+
+.roadmap-svgs{
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+  justify-content: flex-start;
+  border-bottom: 3px solid rgba(202, 225, 122);
+}
+
+.roadmap-info-banner{
+  background-color: #ecebe776;
+  
+}
+
+.roadmap-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 80px;
+  width: 43%;
+  height: 50vh;
+}
+
+.roadmap-info h1{
+font-size: 35px;
+font-weight: 500;
+}
+
+.roadmap-info p{
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.roadmap-more-info-banner{
+  height: 900vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fees-page{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.fees-header{
+  margin-top: 190px;
+  margin-left: 300px;
+}
+
+.fees-header h1{
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.fees-underline{
+  margin-top: 20px;
+  height: 7px;
+  width: 170px;
+  background-image: linear-gradient(to right, rgb(116, 196, 226), rgba(202, 225, 122))
+}
+
+.fees-svgs{
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+  justify-content: flex-start;
+  border-bottom: 3px solid rgba(202, 225, 122);
+}
+
+.fees-info-banner{
+  background-color: #ecebe776;
+  
+}
+
+.fees-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 80px;
+  width: 43%;
+  height: 50vh;
+}
+
+.fees-info h1{
+font-size: 35px;
+font-weight: 500;
+}
+
+.fees-info p{
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.fees-more-info-banner{
+  height: 1000vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

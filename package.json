@@ -1,0 +1,18 @@
+{
+    "name": "primary-pro",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev:client": "cd primary-pro-client && npm run dev",
+        "dev:server": "cd primary-pro-server && npm run dev",
+        "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+        "install:client": "cd primary-pro-client && npm install",
+        "install:server": "cd primary-pro-server && npm install",
+        "install": "npm run install:server && npm run install:client",
+        "uninstall:client": "cd primary-pro-client && npm uninstall",
+        "uninstall:server": "cd primary-pro-server && npm uninstall",
+        "on:client": "cd primary-pro-client &&",
+        "on:server": "cd primary-pro-server &&"
+    }
+}

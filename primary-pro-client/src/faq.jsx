@@ -31,14 +31,22 @@ const Faq = () => {
                     <div className="fees-svg"></div>
                     <h1>PAYING FOR SCHOOL</h1>
                     <p>There are lots of options available to you. We can help you find them.</p>
-                    <p><a href="">Learn how to pay for school</a></p>
+                    <p>
+                        <Link to='/fees.jsx'>
+                            <a href="">Learn how to pay for school</a>
+                        </Link>
+                    </p>
+                        
                 </div>
                 <div className="roadmap">
                     <div className="roadmap-svg"></div>
                     <h1>YOUR SCHOOL ROADMAP</h1>
                     <p>The path may seem unclear. We can help you find your way.</p>
                     <p>
-                        <a href="">Learn how to get to school</a>
+                        <Link  to="/roadmap.jsx">
+                            <a href="">Learn how to get to school</a>
+                        </Link>
+                        
                     </p>
                 </div>
             </div>
