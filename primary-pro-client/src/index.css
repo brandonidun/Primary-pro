@@ -105,6 +105,31 @@ a {
   text-decoration: none;
   color: black;
 }
+.item{
+  position: relative;
+}
+
+.item-content{
+  position: absolute;
+  width: max-content;
+  background-color: #00000028;
+  border-top: 3px solid rgb(105, 149, 202);
+}
+
+.nav-menu l1{
+margin: 10px;
+font-size: 100px;
+}
+
+.CaretDown {
+  position: relative;
+  color: var(--violet-10);
+  top: 1px;
+  transition: transform 250ms ease;
+}
+[data-state='open'] > .CaretDown {
+  transform: rotate(-180deg);
+}
 
 .home-banner {
   margin-top: 190px;
@@ -365,7 +390,7 @@ a {
 }
 
 .fees p{
-  margin-right: 50px;
+  margin-right: 40px;
   font-weight: 300;
 }
 
@@ -398,7 +423,7 @@ a {
 }
 
 .roadmap p{
-  margin-right: 50px;
+  margin-right: 40px;
   font-weight: 300;
 }
 
