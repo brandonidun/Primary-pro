@@ -10,6 +10,7 @@ import WhySchool from "./whyschool";
 import Roadmap from "./roadmap";
 import Fees from "./fees";
 import MySchools from "./myschools";
+import ProfileSearch from "./profilesearch";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "/myschools.jsx",
     element: <MySchools />,
+  },
+  {
+    path: "/profilesearch.jsx",
+    element: <ProfileSearch />,
   },
 ]);
 

@@ -13,18 +13,20 @@ const ProfileNavbar = () => {
       <div className="profile-navbar-buttons">
         <ul>
           <li>
-            <a href="">Dashboard</a>
-          </li>
-          <li>
-            <Link to="/">
-              <a href="">My Schools</a>
+            <Link to="/profile.jsx">
+              <a href="">Dashboard</a>
             </Link>
           </li>
           <li>
-            <a href="">Profile Info</a>
+            <Link to="/myschools.jsx">
+              <a href="">My Schools</a>
+            </Link>
           </li>
+
           <li>
-            <a href="">School Search</a>
+            <Link to="/profilesearch.jsx">
+              <a href="">School Search</a>
+            </Link>
           </li>
         </ul>
       </div>
