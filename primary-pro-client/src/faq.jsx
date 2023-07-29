@@ -20,9 +20,7 @@ const Faq = () => {
           <h1>WHY SCHOOL MATTERS</h1>
           <p>School is worth it. Your future is worth it. You are worth it.</p>
           <p>
-            <Link to="/whyschool.jsx">
-              <a href="">{"Learn why school >"}</a>
-            </Link>
+            <Link to="/whyschool.jsx">{"Learn why school >"}</Link>
           </p>
         </div>
         <div className="fees">
@@ -33,9 +31,7 @@ const Faq = () => {
             them.
           </p>
           <p>
-            <Link to="/fees.jsx">
-              <a href="">{"Learn how to pay for school >"}</a>
-            </Link>
+            <Link to="/fees.jsx">{"Learn how to pay for school >"}</Link>
           </p>
         </div>
         <div className="roadmap">
@@ -43,9 +39,7 @@ const Faq = () => {
           <h1>YOUR SCHOOL ROADMAP</h1>
           <p>The path may seem unclear. We can help you find your way.</p>
           <p>
-            <Link to="/roadmap.jsx">
-              <a href="">{"Learn how to get to school >"}</a>
-            </Link>
+            <Link to="/roadmap.jsx">{"Learn how to get to school >"}</Link>
           </p>
         </div>
       </div>

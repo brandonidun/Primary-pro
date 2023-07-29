@@ -1,8 +1,8 @@
-import Navbar from './navbar';
-import Home from './home';
-import Search from './search';
-import Faq from './faq';
-import Help from './help';
+import Navbar from "./navbar";
+import Home from "./home";
+import Search from "./search";
+import Faq from "./faq";
+import Help from "./help";
 
 function App() {
   return (

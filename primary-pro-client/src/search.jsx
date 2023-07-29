@@ -1,10 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Search = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
+
+    const fetchData = async () => {
+      const res = await fetch("http://localhost:3000/search", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name: event.target.value }),
+      });
+      const searchResults = await res.json();
+      setSearchResults(searchResults);
+    };
+
+    if (event.target.value !== "") {
+      fetchData();
+    } else {
+      setSearchResults([]);
+    }
   };
 
   const handleSubmit = (event) => {
@@ -48,6 +67,9 @@ const Search = ({ onSearch }) => {
           <button type="submit">start</button>
         </div>
       </div>
+      {searchResults.map((searchResult) => {
+        return <div key={searchResult._id}>{searchResult.name}</div>;
+      })}
     </div>
   );
 };

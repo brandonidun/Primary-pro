@@ -14,5 +14,8 @@
         "uninstall:server": "cd primary-pro-server && npm uninstall",
         "on:client": "cd primary-pro-client &&",
         "on:server": "cd primary-pro-server &&"
+    },
+    "dependencies": {
+        "concurrently": "^8.2.0"
     }
 }
