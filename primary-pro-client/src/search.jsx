@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Search = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -45,8 +46,21 @@ const Search = ({ onSearch }) => {
             value={searchTerm}
             onChange={handleInputChange}
           />
-          <button type="submit"></button>
+          <Link to="/schoolgrid.jsx">
+            <button type="submit"></button>
+          </Link>
         </form>
+        <div className="search-result">
+          {searchResults.map((searchResult) => {
+            return (
+              <Link to="/schoolinfo.jsx">
+                <div className="each-search-result" key={searchResult._id}>
+                  {searchResult.name}
+                </div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
       <div className="search-filters">
         <p>Search by filter (optional)</p>
@@ -67,9 +81,6 @@ const Search = ({ onSearch }) => {
           <button type="submit">start</button>
         </div>
       </div>
-      {searchResults.map((searchResult) => {
-        return <div key={searchResult._id}>{searchResult.name}</div>;
-      })}
     </div>
   );
 };

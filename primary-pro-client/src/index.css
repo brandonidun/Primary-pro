@@ -203,16 +203,47 @@ font-size: 100px;
 
 .search-form-container {
   margin-top: 50px;
-  height: 65vh;
+  height: max-content;
   width: 80%;
   background-color: rgb(105, 149, 202);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-search-form-container{
+  margin-top: 14vh;
+  height: max-content;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(105, 149, 202);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-search-form-container form{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.grid-search-form-container input {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  font-size: larger;
+  border-radius: 60px;
+  border: none;
+  height: 60px;
+  width: 890px;
+  position: relative;
 }
 
 .search-form-container form{
   display: flex;
-  height: 100px;
+  position: relative;
   align-items: center;
-  justify-content: center;
 }
 
 .search-form-container input {
@@ -222,7 +253,20 @@ font-size: 100px;
   border-radius: 60px;
   border: none;
   height: 60px;
-  width: 80%;
+  width: 890px;
+  position: relative;
+}
+
+.search-result{
+  height: max-content;
+  background-color: #ecebe7d2;
+  border-radius: 10px;
+  width: 890px;
+  position: absolute;
+}
+
+.each-search-result{
+  margin: 30px;
 }
 
 .form button {
@@ -230,10 +274,13 @@ font-size: 100px;
   height: 35px;
   background-image: url('/search.png');
   background-size: contain;
+  background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   margin-left: 30px;
 }    
+
+
 
 .search-filters{
   display: flex;
@@ -1059,3 +1106,38 @@ font-weight: 500;
   margin-top: 10px;
   border-bottom: 2px solid  rgb(105, 149, 202);
 }
+
+.schoolgrid-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-heading{
+  display: flex;
+  align-items: center;
+  height: 15vh;
+  width: 60%;
+  border-bottom: 5px solid rgb(105, 149, 202);
+}
+
+.grid-heading h1{
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.school-grid-section{
+  height: 50vh;
+  width: 60%;
+}
+
+.each-school-grid{
+  height: 50vh;
+  width: 30%;
+}
+
+.each-school-grid-photo{
+  width: 100%;
+  background-color: black;
+}
+

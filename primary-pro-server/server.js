@@ -19,7 +19,7 @@ app.post("/search", async (req, res) => {
   const filteredSchools = schools.filter((school) =>
     school.name.toLowerCase().startsWith(req.body.name.toLowerCase())
   );
-  res.json(filteredSchools.slice(0, 6));
+  res.json(filteredSchools.slice(0, 5));
 });
 
 async function main() {

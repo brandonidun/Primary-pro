@@ -8,7 +8,7 @@ export function generateSchools(number) {
     "Elementory",
     "Preparatory School",
     "Academy",
-    "Basic Schools",
+    "Basic School",
   ];
   const randSuffixIndex = () => Math.floor(Math.random() * suffixes.length);
   for (let i = 0; i < number; i++) {

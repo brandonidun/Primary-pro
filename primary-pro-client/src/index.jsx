@@ -11,6 +11,9 @@ import Roadmap from "./roadmap";
 import Fees from "./fees";
 import MySchools from "./myschools";
 import ProfileSearch from "./profilesearch";
+import SchoolGrid from "./schoolgrid";
+import SchoolInfo from "./schoolinfo";
+import Eachschoolgrid from "./eachschoolgrid";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +51,18 @@ const router = createBrowserRouter([
   {
     path: "/profilesearch.jsx",
     element: <ProfileSearch />,
+  },
+  {
+    path: "/schoolgrid.jsx",
+    element: <SchoolGrid />,
+  },
+  {
+    path: "/schoolinfo.jsx",
+    element: <SchoolInfo />,
+  },
+  {
+    path: "/eachschoolgrid.jsx",
+    element: <Eachschoolgrid />,
   },
 ]);
 
