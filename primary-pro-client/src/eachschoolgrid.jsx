@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 const Eachschoolgrid = () => {
   const [schools, setSchools] = useState([
     { title: "harvard", id: 1 },
@@ -11,12 +13,16 @@ const Eachschoolgrid = () => {
   ]);
   return (
     <div className="school-grid-section">
-      <div className="each-school-grid" key={schools.id}>
-        <div className="each-school-grid-photo"></div>
-        <div className="each-school-grid-name" key={schools.id}>
-          <p>{schools.title}</p>
-        </div>
-      </div>
+      {schools.map((schools) => (
+        <Link to="/schoolinfo.jsx">
+          <div className="each-school-grid" key={schools.id}>
+            <div className="each-school-grid-photo"></div>
+            <div className="each-school-grid-name" key={schools.id}>
+              <p>{schools.title}</p>
+            </div>
+          </div>
+        </Link>
+      ))}
     </div>
   );
 };
