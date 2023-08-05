@@ -4,6 +4,16 @@ import Search from "./search";
 import Faq from "./faq";
 import Help from "./help";
 
+//work on hamburger menu
+//work on search filters
+//make functioning back end for schools and login and sign up
+//use ionic to make the phone app
+//find  proper school pictures
+//make sure the profile is working properly
+//fix backend for profile details
+//work on the  contact support
+//fix the  search drop menu
+
 function App() {
   return (
     <div className="App">

@@ -15,7 +15,9 @@ const Navbar = () => {
           <NavigationMenu.Root>
             <NavigationMenu.List>
               <NavigationMenu.Item>
-                <a href="">{"find a school"}</a>
+                <Link to="/schoolgrid.jsx">
+                  <a href="">{"find a school"}</a>
+                </Link>
               </NavigationMenu.Item>
               <NavigationMenu.Item className="item">
                 <NavigationMenu.Trigger asChild>

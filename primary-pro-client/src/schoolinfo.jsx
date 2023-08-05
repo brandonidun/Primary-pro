@@ -1,5 +1,6 @@
 import Navbar from "./navbar.jsx";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const SchoolInfo = () => {
   const [schools, setSchools] = useState([
@@ -17,8 +18,12 @@ const SchoolInfo = () => {
       <div className="schoolinfo-banner-writings">
         <h1>Hillsade College</h1>
         <div className="schoolinfo-reg-buttons">
-          <div>Apply for first year</div>
-          <div>Apply for transfer</div>
+          <Link to="/signup.jsx">
+            <div>Apply for first year</div>
+          </Link>
+          <Link to="/login.jsx">
+            <div>Apply for transfer</div>
+          </Link>
         </div>
       </div>
       <div className="schoolinfo-info">
@@ -37,8 +42,12 @@ const SchoolInfo = () => {
         <div className="info-reg">
           <div className="school-emblem"></div>
           <div className="info-reg-buttons">
-            <div>Apply for first year</div>
-            <div>Apply for transfer</div>
+            <Link to="/signup.jsx">
+              <div>Apply for first year</div>
+            </Link>
+            <Link to="/login.jsx">
+              <div>Apply for transfer</div>
+            </Link>
           </div>
         </div>
       </div>

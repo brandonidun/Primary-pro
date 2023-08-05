@@ -42,7 +42,7 @@ const SchoolGrid = () => {
           <p>Explore basic schools all over Ghana</p>
           <div className="telescope"></div>
         </div>
-        <div className="form">
+        <div className="search-form">
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -54,17 +54,6 @@ const SchoolGrid = () => {
               <button type="submit"></button>
             </Link>
           </form>
-          <div className="search-result">
-            {searchResults.map((searchResult) => {
-              return (
-                <Link to="/schoolinfo.jsx">
-                  <div className="each-search-result" key={searchResult._id}>
-                    {searchResult.name}
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
         </div>
       </div>
       <div className="grid-heading">

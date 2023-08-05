@@ -38,7 +38,7 @@ const Search = ({ onSearch }) => {
         <p>Explore basic schools all over Ghana</p>
         <div className="telescope"></div>
       </div>
-      <div className="form">
+      <div className="search-form">
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -74,7 +74,7 @@ const Search = ({ onSearch }) => {
           <button>rural</button>
           <button>suburban</button>
           <button>urban</button>
-          <button>mixed race</button>
+          <button>in close range</button>
           <button>mentally disorder care</button>
         </div>
         <div className="start">
