@@ -14,6 +14,8 @@ import ProfileSearch from "./profilesearch";
 import SchoolGrid from "./schoolgrid";
 import SchoolInfo from "./schoolinfo";
 import Eachschoolgrid from "./eachschoolgrid";
+import ContactSupport from "./contactsupport";
+import Mobilenavbar from "./mobilenavbar";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +65,14 @@ const router = createBrowserRouter([
   {
     path: "/eachschoolgrid.jsx",
     element: <Eachschoolgrid />,
+  },
+  {
+    path: "/contactsupport.jsx",
+    element: <ContactSupport />,
+  },
+  {
+    path: "/mobilenavbar.jsx",
+    element: <Mobilenavbar />,
   },
 ]);
 

@@ -1,8 +1,21 @@
 import { Link } from "react-router-dom";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
-import { CaretDownIcon } from "@radix-ui/react-icons";
-
+import {
+  CaretDownIcon,
+  HamburgerMenuIcon,
+  Cross1Icon,
+} from "@radix-ui/react-icons";
 const Navbar = () => {
+  // $(document).ready(function () {
+  //   $(window).scroll(function () {
+  //     if ($(document).scrollTop() > 50) {
+  //       $(".navbar").css("background", "red");
+  //     } else {
+  //       $(".navbar").css("background", "");
+  //     }
+  //   });
+  // });
+
   return (
     <div className="navbar">
       <div className="title">
@@ -16,12 +29,12 @@ const Navbar = () => {
             <NavigationMenu.List>
               <NavigationMenu.Item>
                 <Link to="/schoolgrid.jsx">
-                  <a href="">{"find a school"}</a>
+                  <a href="">{"FIND A SCHOOL"}</a>
                 </Link>
               </NavigationMenu.Item>
               <NavigationMenu.Item className="item">
                 <NavigationMenu.Trigger asChild>
-                  <a href="">Plan for college</a>
+                  <a>Plan for college</a>
                 </NavigationMenu.Trigger>
                 <CaretDownIcon className="CaretDown" aria-hidden />
                 <NavigationMenu.Content className="item-content">
@@ -40,7 +53,7 @@ const Navbar = () => {
               </NavigationMenu.Item>
               <NavigationMenu.Item className="item">
                 <NavigationMenu.Trigger asChild>
-                  <a href="">apply to a school</a>
+                  <a>apply to a school</a>
                 </NavigationMenu.Trigger>
                 <CaretDownIcon className="CaretDown" aria-hidden />
                 <NavigationMenu.Content className="item-content">
@@ -65,6 +78,11 @@ const Navbar = () => {
             </li>
           </Link>
         </ul>
+      </div>
+      <div className="buttons-mobile">
+        <Link to="/mobilenavbar.jsx">
+          <HamburgerMenuIcon />
+        </Link>
       </div>
     </div>
   );

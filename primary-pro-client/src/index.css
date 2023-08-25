@@ -27,7 +27,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  background-color: #ecebe776;
+  background-color: #1f1f1f0c;
   position: fixed;
   width: 100%;
   height: 7em;
@@ -35,6 +35,64 @@
   justify-content: center;
   align-items: center;
   padding: 1%;
+}
+
+.mobile-navbar-page{
+  background-image: linear-gradient(to bottom, rgba(108, 183, 215), rgb(51, 119, 194));
+  height: 100vh;
+  display: flex;
+}
+.mobile-navbar-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.mobile-navbar-buttons{
+  margin-top: 5em;
+  height: 45%;
+  margin-left: 10%;
+}
+
+
+.mobile-navbar-buttons ul{
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.login-signup-buttons-navbar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-mobile-navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin-top: 20px;
+  height:7vh;
+  width: 80%;
+  background-color: white;
+}
+
+.sign-up-mobile-navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin-top:10px;
+  height:7vh;
+  width: 80%;
+  background-color: rgb(30, 71, 116);
+  color: white;
 }
 
 .title h1{
@@ -49,6 +107,10 @@
   /* align-items: center; */
   /* width: 100%; */
   /* justify-content: center; */
+}
+
+.buttons-mobile{
+  display: none;
 }
 
 .buttons ul {
@@ -331,6 +393,10 @@ search-form form{
   background-color: black;
 }
 
+.start a:hover{
+  text-decoration: underline;
+}
+
 .faq-banner{
   display: flex;
   flex-direction: column;
@@ -338,7 +404,7 @@ search-form form{
   min-height: 100vh;
   height: max-content;
   background-color: rgb(243, 243, 243);
-  margin-top: 50px;
+  margin-top: 10%;
 }
 
 .faq-header{
@@ -542,6 +608,10 @@ search-form form{
   border: none;
   color: white;
   background-color: rgba(82, 190, 218);
+}
+
+.contact-support-writings button:hover {
+  background-color: #0056b3;
 }
 
 .sign-up-page{
@@ -1148,9 +1218,9 @@ font-weight: 500;
   width: 63%;
   margin-top: 10px;
   display: inline-grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 20px;
-  row-gap: 30px;
+  grid-template-columns: 31% 31% 31%;
+  column-gap: 30px;
+  row-gap: 120px;
 }
 
 .each-school-grid{
@@ -1160,13 +1230,23 @@ font-weight: 500;
 
 .each-school-grid-photo{
   width: 100%;
-  height: 20vh;
-  background-color: rgb(105, 149, 202);
+  height: 25vh;
+  background-size: c;
+  /* background-repeat: none; */
 }
 
 .each-school-grid p{
   color: rgb(105, 149, 202);
   font-size: 20px;
+  margin-left:20% ;
+}
+
+#logo-photo{
+  width: 100%;
+  height: 29vh;
+  padding: 5%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .schoolinfo-page{
@@ -1265,6 +1345,60 @@ font-weight: 500;
   background-color: rgba(158, 180, 198, 0.755);
 }
 
+.contactsupport-page{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.help-form-container{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.help-form {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  border: 2px solid rgb(105, 149, 202);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  margin-bottom: 30px;
+}
+
+.form-group input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.help-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.help-form button:hover {
+  background-color: #0056b3;
+}
 
 @media only screen and (max-width: 500px) {
   .navbar {
@@ -1296,6 +1430,13 @@ font-weight: 500;
     /* align-items: center; */
     /* width: 100%; */
     /* justify-content: center; */
+  }
+
+  .buttons-mobile{
+    display: block;
+    width: 40%;
+    display:flex;
+    justify-content: end;
   }
   .home-banner {
     margin-top: 250px;
@@ -1497,9 +1638,6 @@ font-weight: 500;
     color: aliceblue;
     background-color: black;
   }
-  .faq{
-  
-  }
   .faq-banner{
     display: flex;
     flex-direction: column;
@@ -1507,6 +1645,7 @@ font-weight: 500;
     min-height: 100vh;
     height: max-content;
     background-color: rgb(243, 243, 243);
+    margin-top: 0px;
   }
   
   .faq-header{
@@ -1515,7 +1654,6 @@ font-weight: 500;
     justify-content: space-evenly;
     width: 100%;
     height: max-content;
-    min-height: 5vh;
   }
   
   .header-writings{
@@ -1568,7 +1706,7 @@ font-weight: 500;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 20px;
-    margin: 10px;
+    margin: 7px;
     background-color: rgb(105, 149, 202);
   }
   
@@ -1601,7 +1739,7 @@ font-weight: 500;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 20px;
-    margin: 10px;
+    margin: 7px;
     background-color: rgb(105, 149, 202);
   }
   
@@ -1634,7 +1772,7 @@ font-weight: 500;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 20px;
-    margin: 10px;
+    margin: 7px;
     background-color: rgb(105, 149, 202);
   }
   
@@ -1743,6 +1881,7 @@ font-weight: 500;
 
 .signup-form-div{
   width: 75%;
+  height: max-content;
 }
  
 #sign-up-form {
@@ -1751,7 +1890,7 @@ font-weight: 500;
   align-items: center;
   font-size: 13px;
   width: 100%;
-  height: 140vh;
+  height: 130vh;
   justify-content: space-evenly;
 }
 

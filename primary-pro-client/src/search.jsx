@@ -79,6 +79,9 @@ const Search = ({ onSearch }) => {
         </div>
         <div className="start">
           <button type="submit">start</button>
+          <Link to="/schoolgrid.jsx">
+            <a href="">{"or view all schools >"}</a>
+          </Link>
         </div>
       </div>
     </div>
