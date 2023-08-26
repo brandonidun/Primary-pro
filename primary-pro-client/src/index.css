@@ -1220,7 +1220,7 @@ font-weight: 500;
   display: inline-grid;
   grid-template-columns: 31% 31% 31%;
   column-gap: 30px;
-  row-gap: 120px;
+  row-gap: 150px;
 }
 
 .each-school-grid{
@@ -1238,7 +1238,7 @@ font-weight: 500;
 .each-school-grid p{
   color: rgb(105, 149, 202);
   font-size: 20px;
-  margin-left:20% ;
+  text-align: center;
 }
 
 #logo-photo{
@@ -1267,7 +1267,9 @@ font-weight: 500;
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to right, rgba(116, 197, 226, 0.286), rgba(203, 225, 122, 0.286));
+  background-image: url("/bisschphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .schoolinfo-banner-writings h1{
@@ -1587,6 +1589,34 @@ textarea {
     margin: 10px;
   }
   
+  .school-grid-section{
+    height: 40vh;
+    width: 30%;
+    margin-top: 10px;
+    display: inline-grid;
+    grid-template-columns: 31% 31% 31%;
+    column-gap: 30px;
+    row-gap: 150px;
+  }
+  
+  .each-school-grid{
+    height: 20vh;
+    width: 30%;
+  }
+  
+  .each-school-grid-photo{
+    width: 30%;
+    height: 10vh;
+    background-size: c;
+    /* background-repeat: none; */
+  }
+  
+  .each-school-grid p{
+    color: rgb(105, 149, 202);
+    font-size: 20px;
+    text-align: center;
+  }
+
   .search-form button {
     width: 35px;
     height: 35px;

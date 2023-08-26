@@ -13,6 +13,11 @@ import MySchools from "./myschools";
 import ProfileSearch from "./profilesearch";
 import SchoolGrid from "./schoolgrid";
 import SchoolInfo from "./schoolinfo";
+import ABSSchoolInfo from "./ABSschoolinfo";
+import CTKSchoolInfo from "./CTKschoolinfo";
+import SBSSSchoolInfo from "./SBSSschoolinfo";
+import STCSchoolInfo from "./STCschoolinfo";
+import THIBSSchoolInfo from "./THIBSschoolinfo";
 import Eachschoolgrid from "./eachschoolgrid";
 import ContactSupport from "./contactsupport";
 import Mobilenavbar from "./mobilenavbar";
@@ -61,6 +66,26 @@ const router = createBrowserRouter([
   {
     path: "/schoolinfo.jsx",
     element: <SchoolInfo />,
+  },
+  {
+    path: "/ABSschoolinfo.jsx",
+    element: <ABSSchoolInfo />,
+  },
+  {
+    path: "/CTKschoolinfo.jsx",
+    element: <CTKSchoolInfo />,
+  },
+  {
+    path: "/SBSSschoolinfo.jsx",
+    element: <SBSSSchoolInfo />,
+  },
+  {
+    path: "/THIBSschoolinfo.jsx",
+    element: <THIBSSchoolInfo />,
+  },
+  {
+    path: "/STCschoolinfo.jsx",
+    element: <STCSchoolInfo />,
   },
   {
     path: "/eachschoolgrid.jsx",
