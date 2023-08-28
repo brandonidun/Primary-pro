@@ -8,17 +8,13 @@ import ScrollToTop from "./scrolltotop";
 
 //make functioning back end for schools and login and sign up
 //use ionic to make the phone app
-//find  proper school pictures
-//work on search filters
+//work on search filters selection
 //make sure the profile is working properly
 //fix backend for profile details
 //fix bugs w css
-//react context api
-//google form
-//netlify
 //ionic
-//mongo atlas
 //hugging faces
+//credit page
 
 function App() {
   return (

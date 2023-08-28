@@ -2540,7 +2540,16 @@ font-weight: 500;
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to right, rgba(116, 197, 226, 0.286), rgba(203, 225, 122, 0.286));
+  background-image: url("/bisschphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings h1{
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
 }
 
 .schoolinfo-banner-writings2{
@@ -2551,15 +2560,9 @@ font-weight: 500;
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to right, rgba(116, 197, 226, 0.286), rgba(203, 225, 122, 0.286));
-}
-
-.schoolinfo-banner-writings h1{
-  font-size: 30px;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-
+  background-image: url("/absschoolphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .schoolinfo-banner-writings2 h1{
@@ -2567,8 +2570,116 @@ font-weight: 500;
   font-weight: 400;
   display: flex;
   justify-content: center;
+  color: white;
 
 }
+
+.schoolinfo-banner-writings3{
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/tisschoolphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings3 h1{
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+
+}
+
+.schoolinfo-banner-writings4{
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/aisschphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings4 h1{
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+
+}
+
+.schoolinfo-banner-writings5{
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/gisschphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings5 h1{
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.schoolinfo-banner-writings6{
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/aisschphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings6 h1{
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+
+}
+
+.schoolinfo-banner-writings7{
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/sosschphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings7 h1{
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+
+}
+
+
 
 .schoolinfo-reg-buttons{
   display: flex;
