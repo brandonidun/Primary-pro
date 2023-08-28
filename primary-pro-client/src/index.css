@@ -384,6 +384,10 @@ search-form form{
   color: #000;
 }
 
+.search-filter-buttons button.active {
+  background-color: rgb(36, 76, 124); 
+}
+
 .start button{
   padding: 20px;
   font-size: 15px;
@@ -2153,7 +2157,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95%;
+  width: 92%;
   height: 150vh;
   margin-top: 50px;
   background-color: aliceblue;
@@ -2713,7 +2717,8 @@ font-weight: 500;
 }
 
 .info-reg{
-  width: 95%;
+  width: 100%;
+  height: max-content;
   font-size: 15px;
   padding: 5%;
   display: flex;
@@ -2722,14 +2727,15 @@ font-weight: 500;
   align-items: center;
 }
 
-.school-emblem{
-  height: 20vh;
-  width: 90%;
-  background-color: black;
+.school-emblem img{
+    width: 100%;
+    height: 20vh;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .info-reg-buttons{
-  display: flex;
+  display: none;
   flex-direction: column; 
 }
 
@@ -2747,5 +2753,55 @@ font-weight: 500;
 .info-reg-buttons div:hover {
   background-color: rgba(158, 180, 198, 0.755);
 }
+
+
+.school-tution{
+  width: 80%;
+  height: 60vh;
+  margin: 10%;
+  align-self: center;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 99, 71, 0.425);
+}
+
+.school-tution div{
+  width: 90%;
+}
+
+.school-tution h1{
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.school-tution p{
+  font-size: 15px;
+}
+
+.school-details{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:  #f0f7ff;
+}
+
+.school-address{
+  padding: 5%;
+  width: 100%;
+}
+
+.school-address p{
+  color: black;
+  font-size: 15px;
+}
+
+.school-map iframe{
+  width: 100%;
+}
+
 
 }

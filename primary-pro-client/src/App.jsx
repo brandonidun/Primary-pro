@@ -6,14 +6,8 @@ import Help from "./help";
 import { ScrollRestoration } from "react-router-dom";
 import ScrollToTop from "./scrolltotop";
 
-//make functioning back end for schools and login and sign up
 //use ionic to make the phone app
-//work on search filters selection
 //make sure the profile is working properly
-//fix backend for profile details
-//fix bugs w css
-//ionic
-//hugging faces
 //credit page
 
 function App() {
