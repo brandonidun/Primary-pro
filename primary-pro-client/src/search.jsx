@@ -9,7 +9,7 @@ const Search = ({ onSearch }) => {
     setSearchTerm(event.target.value);
 
     const fetchData = async () => {
-      const res = await fetch("http://localhost:3000/search", {
+      const res = await fetch("https://primary-pro.onrender.com/search", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
