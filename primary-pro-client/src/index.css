@@ -381,6 +381,7 @@ search-form form{
   border-radius: 30px;
   border: none;
   background-color: rgb(63, 117, 183);
+  color: #000;
 }
 
 .start button{
@@ -1840,26 +1841,35 @@ textarea {
   }
   
   .school-grid-section{
-    height: 40vh;
-    width: 30%;
-    margin-top: 10px;
-    display: inline-grid;
-    grid-template-columns: 31% 31% 31%;
-    column-gap: 30px;
-    row-gap: 150px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
   }
   
   .each-school-grid{
-    height: 20vh;
-    width: 30%;
+    height: 10vh;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
-  .each-school-grid-photo{
-    width: 30%;
-    height: 10vh;
-    background-size: c;
+  .each-school-grid img{
+    width: 3%;
+    height: 1vh;
+    background-size: contain;
     /* background-repeat: none; */
   }
+
+  #logo-photo{
+    width: 50%;
+    height: 19vh;
+    padding: 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
   
   .each-school-grid p{
     color: rgb(105, 149, 202);

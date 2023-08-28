@@ -42,7 +42,7 @@ function App() {
           <Help />
         </div>
       </div>
-      <ScrollToTop />
+      <ScrollRestoration />
     </div>
   );
 }
