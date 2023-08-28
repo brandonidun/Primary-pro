@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Reviewform from "./reviewform.jsx";
 
-const SchoolInfo = () => {
+const TISSchoolInfo = () => {
   const [schools, setSchools] = useState([
     {
       title: "British International School",
@@ -19,7 +19,7 @@ const SchoolInfo = () => {
       id: 2,
     },
     {
-      title: "Christ the King International School",
+      title: "Tema International School",
       logo: "/sch13.jpg",
       proximity: "10km",
       id: 3,
@@ -100,8 +100,8 @@ const SchoolInfo = () => {
   return (
     <div className="schoolinfo-page">
       <Navbar />
-      <div className="schoolinfo-banner-writings">
-        <h1>British International School</h1>
+      <div className="schoolinfo-banner-writings3">
+        <h1>Tema International School</h1>
         <div className="schoolinfo-reg-buttons">
           <Link to="/signup.jsx">
             <div>Apply for first year</div>
@@ -114,10 +114,11 @@ const SchoolInfo = () => {
       <div className="schoolinfo-info">
         <div className="info-writings">
           WHO WE ARE <br />
-          We are premium world class international school, providing quality
-          international education to meet the needs of the rapidly growing,
-          diverse community in the World. Our school is made up of three
-          sections: the Early Years, Primary and Secondary Departments.
+          Tema International School is a private coeducational P-12 school
+          situated some two kilometres north of the port city of Tema which lies
+          on the Greenwich meridian. The Primary School Campus, located one
+          kilometre from the main campus, is a PYP School. The main campus
+          offers secondary boarding opportunities in MYP and DP.
           <br />
           <br />
           WHAT WE OFFER <br />
@@ -133,7 +134,7 @@ const SchoolInfo = () => {
         </div>
         <div className="info-reg">
           <div className="school-emblem">
-            <img src="/sch9.jpg" alt="" />
+            <img src="/sch13.jpg" alt="" />
           </div>
           <div className="info-reg-buttons">
             <Link to="/signup.jsx">
@@ -156,21 +157,22 @@ const SchoolInfo = () => {
         </div>
         <div>
           <h1>Yearly Tution</h1>
-          <h1>GH₵21,950</h1>
+          <h1>GH₵40,950</h1>
         </div>
       </div>
       <div className="school-details">
         <div className="school-address">
           <p>
-            The British International School - Ghana East Legon Hills, Greater
-            Accra, Ghana. <br />
-            +233 289554447 | +233 289554448 <br />
-            info@bisghana.com.gh
+            Off Tema – Akosombo Rd (Opposite Afariwaa Farms) Accra, Ghana.{" "}
+            <br />
+            +233 303 30 5134 | +233 303 30 8737 | +233 24 9637 762 |+233 50 3849
+            799 <br />
+            info@tis.edu.gh
           </p>
         </div>
         <div className="school-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5402369259646!2d-0.1667549191173268!3d5.634663979769313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b548614ad45%3A0xefb671dc8e19cfc4!2sBritish%20International%20School!5e0!3m2!1sen!2sgh!4v1693022005197!5m2!1sen!2sgh"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.043837087627!2d-0.020627224723146015!3d5.706806894275073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf806a81869a51%3A0xcf1dee9e01b7b1fc!2sTema%20International%20School!5e0!3m2!1sen!2sgh!4v1693030716800!5m2!1sen!2sgh"
             width="400"
             height="300"
             style={{ border: 0 }}
@@ -185,4 +187,4 @@ const SchoolInfo = () => {
   );
 };
 
-export default SchoolInfo;
+export default TISSchoolInfo;

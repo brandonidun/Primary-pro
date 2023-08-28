@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Reviewform from "./reviewform.jsx";
 
-const SchoolInfo = () => {
+const GISSchoolInfo = () => {
   const [schools, setSchools] = useState([
     {
       title: "British International School",
@@ -100,8 +100,8 @@ const SchoolInfo = () => {
   return (
     <div className="schoolinfo-page">
       <Navbar />
-      <div className="schoolinfo-banner-writings">
-        <h1>British International School</h1>
+      <div className="schoolinfo-banner-writings5">
+        <h1>Ghana International School</h1>
         <div className="schoolinfo-reg-buttons">
           <Link to="/signup.jsx">
             <div>Apply for first year</div>
@@ -114,26 +114,29 @@ const SchoolInfo = () => {
       <div className="schoolinfo-info">
         <div className="info-writings">
           WHO WE ARE <br />
-          We are premium world class international school, providing quality
-          international education to meet the needs of the rapidly growing,
-          diverse community in the World. Our school is made up of three
-          sections: the Early Years, Primary and Secondary Departments.
+          Ghana International School is a not-for-profit, private,
+          non-sectarian, coeducational day school established in September 1955
+          to provide international education to students of all races and
+          creeds, at a time when Ghana was yet to achieve full independence, and
+          international schools were a rarity. Sixty years on, GIS continues to
+          provide quality education to both international and local students in
+          a completely different and more competitive educational settin
           <br />
           <br />
           WHAT WE OFFER <br />
-          BIS combines a highly personalised approach to children’s social,
-          intellectual, moral and physical development with excellent sporting
-          and technological facilities, world class equipment, small class sizes
-          and a wide range of co-curricular activities. We offer the British
-          National Curriculum for Early Years and the University of Cambridge
-          International Examinations for primary and secondary education. We
-          prepare learners for examinations including Cambridge Primary
-          Checkpoint, Check point for Cambridge Secondary 1, IGCSE, AS and A
-          Level.
+          GIS offers a curriculum modeled along the English National Curriculum
+          and Cambridge International Examinations, IGCSE and GCE Advanced level
+          with English language as the medium of instruction. Ghana
+          International School after years of application and hard work is the
+          first and only international school in Ghana to be accredited by both
+          the Council of International Schools (CIS) and the New England
+          Association of Schools and Colleges (NEASC). The school is also an
+          active member of the Association of International Schools in Africa
+          (AISA).
         </div>
         <div className="info-reg">
           <div className="school-emblem">
-            <img src="/sch9.jpg" alt="" />
+            <img src="/sch14.webp" alt="" />
           </div>
           <div className="info-reg-buttons">
             <Link to="/signup.jsx">
@@ -156,21 +159,22 @@ const SchoolInfo = () => {
         </div>
         <div>
           <h1>Yearly Tution</h1>
-          <h1>GH₵21,950</h1>
+          <h1>GH₵27,750</h1>
         </div>
       </div>
       <div className="school-details">
         <div className="school-address">
           <p>
-            The British International School - Ghana East Legon Hills, Greater
-            Accra, Ghana. <br />
-            +233 289554447 | +233 289554448 <br />
-            info@bisghana.com.gh
+            Elementary Campus No 1 Jungle Road, East Legon, Accra-Ghana. <br />
+            (+233)-0302-948761 <br />
+            (+233)-28-9547951
+            <br />
+            info@gisghana.org
           </p>
         </div>
         <div className="school-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5402369259646!2d-0.1667549191173268!3d5.634663979769313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b548614ad45%3A0xefb671dc8e19cfc4!2sBritish%20International%20School!5e0!3m2!1sen!2sgh!4v1693022005197!5m2!1sen!2sgh"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9085642468062!2d-0.17937122472402947!3d5.580533394400107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9a92f49a6e5f%3A0x39d1d745aa5e49cf!2sGhana%20International%20School!5e0!3m2!1sen!2sgh!4v1693064742010!5m2!1sen!2sgh"
             width="400"
             height="300"
             style={{ border: 0 }}
@@ -185,4 +189,4 @@ const SchoolInfo = () => {
   );
 };
 
-export default SchoolInfo;
+export default GISSchoolInfo;

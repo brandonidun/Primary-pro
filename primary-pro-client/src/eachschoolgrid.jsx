@@ -18,43 +18,45 @@ const Eachschoolgrid = () => {
       id: 2,
     },
     {
-      title: "Christ the King International School",
+      title: "Tema International School",
       logo: "/sch13.jpg",
       proximity: "10km",
-      link: "/CTKschoolinfo.jsx",
+      link: "/TISschoolinfo.jsx",
       id: 3,
     },
     {
-      title: "St. Theresas Catholic Church School",
+      title: "Ghana International School",
       logo: "/sch14.webp",
       proximity: "10km",
-      link: "/STCschoolinfo.jsx",
+      link: "/GISschoolinfo.jsx",
       id: 4,
     },
     {
-      title: "Brentford International Academy",
+      title: "American International School",
       logo: "/sch6.jpg",
       proximity: "10km",
+      link: "/AISschoolinfo.jsx",
       id: 5,
     },
-    {
-      title: "Liz international Montessori",
-      logo: "/sch1.jpg.webp",
-      proximity: "10km",
-      id: 6,
-    },
+
     {
       title: "The Hilltop International British School",
       logo: "/sh2.jpg",
       proximity: "10km",
       link: "/THIBSschoolinfo.jsx",
+      id: 6,
+    },
+    {
+      title: "SOS-Hermann Gmeiner International College",
+      logo: "/sch1.jpg",
+      proximity: "10km",
+      link: "SOSschoolinfo.jsx",
       id: 7,
     },
     {
       title: "St. Bernadette Soubirous School",
       logo: "/sch3.jpeg",
       proximity: "10km",
-      link: "/SBSSschoolinfo.jsx",
       id: 8,
     },
     {
@@ -108,6 +110,7 @@ const Eachschoolgrid = () => {
             <img id="logo-photo" key={schools.id} src={schools.logo}></img>
             <div className="each-school-grid-name" key={schools.id}>
               <p>{schools.title}</p>
+              <p id="location">Accra, Ghana</p>
             </div>
           </div>
         </Link>

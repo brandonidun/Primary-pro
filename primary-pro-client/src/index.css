@@ -1220,7 +1220,7 @@ font-weight: 500;
   display: inline-grid;
   grid-template-columns: 31% 31% 31%;
   column-gap: 30px;
-  row-gap: 150px;
+  row-gap: 180px;
 }
 
 .each-school-grid{
@@ -1239,6 +1239,12 @@ font-weight: 500;
   color: rgb(105, 149, 202);
   font-size: 20px;
   text-align: center;
+}
+
+#location{
+  color: black;
+  font-size: 15px;
+  font-weight: 200;
 }
 
 #logo-photo{
@@ -1280,6 +1286,134 @@ font-weight: 500;
 
 }
 
+.schoolinfo-banner-writings2{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/absschoolphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings2 h1{
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+
+.schoolinfo-banner-writings3{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/tisschoolphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings3 h1{
+  font-size: 70px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+
+}
+
+.schoolinfo-banner-writings4{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/aisschphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings4 h1{
+  font-size: 70px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+
+}
+
+.schoolinfo-banner-writings5{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/gisschphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings5 h1{
+  font-size: 70px;
+  font-weight: 400;
+  display: flex;
+  color: white;
+  justify-content: center;
+
+}
+
+.schoolinfo-banner-writings6{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/aisschphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings6 h1{
+  font-size: 70px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+
+}
+
+.schoolinfo-banner-writings7{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/sosschphoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schoolinfo-banner-writings7 h1{
+  font-size: 70px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+
+}
+
 .schoolinfo-reg-buttons{
   display: flex;
   flex-direction: row;
@@ -1307,7 +1441,7 @@ font-weight: 500;
 
 .info-writings{
   width: 60%;
-  font-size: 20px;
+  font-size: 17px;
   padding: 5%;
 }
 
@@ -1321,10 +1455,11 @@ font-weight: 500;
   align-items: center;
 }
 
-.school-emblem{
-  height: 20vh;
-  width: 90%;
-  background-color: black;
+.school-emblem img{
+  width: 100%;
+  height: 30vh;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 .info-reg-buttons{
@@ -1345,6 +1480,121 @@ font-weight: 500;
 
 .info-reg-buttons div:hover {
   background-color: rgba(158, 180, 198, 0.755);
+}
+
+.school-tution{
+  width: 70%;
+  height: 30vh;
+  margin: 10%;
+  align-self: center;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 99, 71, 0.425);
+}
+
+.school-tution div{
+  width: 30%;
+}
+
+.school-tution h1{
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.school-tution p{
+  font-size: 17px;
+}
+
+.school-details{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color:  #f0f7ff;
+}
+
+.school-address{
+  padding: 5%;
+  width: 50%;
+}
+
+.school-address p{
+  color: black;
+  font-size: 18px;
+}
+
+.school-map{
+  padding: 5%;
+}
+
+/* Add this CSS to your stylesheets */
+.review-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15%;
+  background-color: white; /* Light blue background */
+  border-radius: 8px;
+  
+}
+
+.review-form h2 {
+  color: #0074e4; /* Blue heading text color */
+}
+
+.review-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #0074e4; /* Blue border for textarea */
+  border-radius: 5px;
+}
+
+.review-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0074e4; /* Blue button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: #0052a5; /* Darker blue on hover */
+}
+
+.star-rating {
+  margin-top: 5px;
+}
+
+.star-rating span {
+  font-size: 24px;
+  color: #0052a57e; /* Blue star color */
+  margin-right: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.star-rating span:hover {
+  color: #0052a5; /* Darker blue on hover */
+}
+
+.star-rating span.selected {
+  font-size: 24px;
+  color: #0052a5; /* Darker blue for selected stars */
+  margin-right: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .contactsupport-page{
@@ -2283,7 +2533,26 @@ font-weight: 500;
   background-image: linear-gradient(to right, rgba(116, 197, 226, 0.286), rgba(203, 225, 122, 0.286));
 }
 
+.schoolinfo-banner-writings2{
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgba(116, 197, 226, 0.286), rgba(203, 225, 122, 0.286));
+}
+
 .schoolinfo-banner-writings h1{
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+
+}
+
+.schoolinfo-banner-writings2 h1{
   font-size: 30px;
   font-weight: 400;
   display: flex;

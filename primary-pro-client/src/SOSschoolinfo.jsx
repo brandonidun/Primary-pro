@@ -1,8 +1,9 @@
 import Navbar from "./navbar.jsx";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Reviewform from "./reviewform.jsx";
 
-const STCSchoolInfo = () => {
+const SOSSchoolInfo = () => {
   const [schools, setSchools] = useState([
     {
       title: "British International School",
@@ -99,8 +100,8 @@ const STCSchoolInfo = () => {
   return (
     <div className="schoolinfo-page">
       <Navbar />
-      <div className="schoolinfo-banner-writings">
-        <h1>British International School</h1>
+      <div className="schoolinfo-banner-writings4">
+        <h1>American International School</h1>
         <div className="schoolinfo-reg-buttons">
           <Link to="/signup.jsx">
             <div>Apply for first year</div>
@@ -112,19 +113,28 @@ const STCSchoolInfo = () => {
       </div>
       <div className="schoolinfo-info">
         <div className="info-writings">
-          Founded in 1844, Hillsdale College is a private, residential,
-          coeducational, nonsectarian Christian, "Best Value" classical liberal
-          arts college of 1,460 students located on a picturesque 400-acre
-          campus in southern Michigan. All students enroll in a rigorous,
-          structured core curriculum rooted in the enduring truths of the
-          Western tradition. More than 100 student organizations, as well as
-          athletic teams and fine arts ensembles, contribute to a vibrant
-          student life that is animated by an Honor Code committing students to
-          the goal of self-government. Graduates leave the College shaped by an
-          experience purposed to "develop the minds and improve the hearts."
+          WHO WE ARE <br />
+          At American International School, we believe when we stand united, we
+          can achieve greatness. Just as the passage from 4:16 states. “From
+          him, the whole body, joined and held together by every supporting
+          ligament, grows and builds itself up in love; each part does its
+          work.” Each of us is a valuable member of the school community. When
+          we work in harmony, we strengthen not only ourselves but the school
+          community
+          <br />
+          <br />
+          WHAT WE OFFER <br />
+          Our school is a melting pot of cultures, talents, and ideas. We
+          cherish and celebrate the diversity that enriches our learning
+          environment. Let us be open-minded, accepting, and respectful of one
+          another's unique backgrounds, perspectives, and abilities. Together,
+          we create an inclusive space where everyone feels valued and
+          appreciated.
         </div>
         <div className="info-reg">
-          <div className="school-emblem"></div>
+          <div className="school-emblem">
+            <img src="/sch6.jpg" alt="" />
+          </div>
           <div className="info-reg-buttons">
             <Link to="/signup.jsx">
               <div>Apply for first year</div>
@@ -135,8 +145,45 @@ const STCSchoolInfo = () => {
           </div>
         </div>
       </div>
+      <div className="school-tution">
+        <div>
+          <h1>Tuition</h1>
+          <p>
+            Tuition is for the highest grade offered and may have changed for
+            the current school year. For more information, please contact the
+            school.
+          </p>
+        </div>
+        <div>
+          <h1>Yearly Tution</h1>
+          <h1>GH₵45,750</h1>
+        </div>
+      </div>
+      <div className="school-details">
+        <div className="school-address">
+          <p>
+            Elementary Campus No 1 Jungle Road, East Legon, Accra-Ghana. <br />
+            (+233)-0302-948761 <br />
+            (+233)-28-9547951
+            <br />
+            info@aisghana.org
+          </p>
+        </div>
+        <div className="school-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5464944699315!2d-0.15445181911738884!3d5.6337486797725775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf84b2ccbda329%3A0x3546acb8b0d31bb6!2sAmerican%20International%20School%20-%20Elementary%20Campus!5e0!3m2!1sen!2sgh!4v1693059492208!5m2!1sen!2sgh"
+            width="400"
+            height="300"
+            style={{ border: 0 }}
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <Reviewform />
     </div>
   );
 };
 
-export default STCSchoolInfo;
+export default SOSSchoolInfo;

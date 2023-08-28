@@ -3,6 +3,8 @@ import Home from "./home";
 import Search from "./search";
 import Faq from "./faq";
 import Help from "./help";
+import { ScrollRestoration } from "react-router-dom";
+import ScrollToTop from "./scrolltotop";
 
 //make functioning back end for schools and login and sign up
 //use ionic to make the phone app
@@ -13,6 +15,10 @@ import Help from "./help";
 //fix bugs w css
 //react context api
 //google form
+//netlify
+//ionic
+//mongo atlas
+//hugging faces
 
 function App() {
   return (
@@ -36,6 +42,7 @@ function App() {
           <Help />
         </div>
       </div>
+      <ScrollToTop />
     </div>
   );
 }
